@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/com.learn.iml" filepath="$PROJECT_DIR$/com.learn.iml" />
       <module fileurl="file://$PROJECT_DIR$/excise-api/excise-api.iml" filepath="$PROJECT_DIR$/excise-api/excise-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/excise-service/excise-service.iml" filepath="$PROJECT_DIR$/excise-service/excise-service.iml" />
     </modules>
   </component>
 </project>
