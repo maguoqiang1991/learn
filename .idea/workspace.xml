@@ -2,32 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="751d98fe-22f4-4d12-879c-403deb5955a1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/excise-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/excise-service/src/main/java/thread/FIFOMutex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/excise-service/src/main/java/thread/ReentrantLockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.learn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/com.learn.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/excise-api/excise-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/excise-api/excise-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/excise-api/target/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excise-api/target/classes/utils/DateUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/excise-api/target/classes/utils/DateUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/file/git.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/file/~$git.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/excise/JsonDemo/Requestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/excise/JsonDemo/ServletDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/excise/JsonDemo/requestion/JsonDemo01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/excise/JsonDemo/requestion/test/Base.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/excise/JsonDemo/requestion/test/Sub.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/excise/JsonDemo/JsonDemo01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/excise/JsonDemo/Requestion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/excise/JsonDemo/ServletDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/excise/JsonDemo/requestion/JsonDemo01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/excise/JsonDemo/requestion/test/Base.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/excise/JsonDemo/requestion/test/Sub.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,12 +50,6 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-  </component>
   <component name="ProjectId" id="1sqJVcBBXyUm17RL1iYvVt0QROg" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
@@ -96,7 +68,12 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.Requestion.test07">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mgq\work\myproject\learn" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.FIFOMutex$Main">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -145,6 +122,34 @@
       <module />
       <method />
     </configuration>
+    <configuration name="FIFOMutex$Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.FIFOMutex$Main" />
+      <module name="excise-service" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReentrantLockTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.ReentrantLockTest" />
+      <module name="excise-service" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -161,40 +166,6 @@
       <setting name="depsClasspath" value="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
-    </configuration>
-    <configuration name="JsonDemo01.mapToJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.learn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.excise.JsonDemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.excise.JsonDemo.requestion" />
-      <option name="MAIN_CLASS_NAME" value="com.excise.JsonDemo.requestion.JsonDemo01" />
-      <option name="METHOD_NAME" value="mapToJson" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Requestion.test03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.learn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.excise.JsonDemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.excise.JsonDemo" />
-      <option name="MAIN_CLASS_NAME" value="com.excise.JsonDemo.Requestion" />
-      <option name="METHOD_NAME" value="test03" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="Requestion.test04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.learn" />
@@ -282,19 +253,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.JsonDemo01.mapToJson" />
-      <item itemvalue="JUnit.Requestion.test03" />
       <item itemvalue="JUnit.Requestion.test04" />
       <item itemvalue="JUnit.Requestion.test06" />
       <item itemvalue="JUnit.Requestion.test07" />
+      <item itemvalue="Application.ReentrantLockTest" />
+      <item itemvalue="Application.FIFOMutex$Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FIFOMutex$Main" />
+        <item itemvalue="Application.ReentrantLockTest" />
         <item itemvalue="JUnit.Requestion.test07" />
         <item itemvalue="JUnit.Requestion.test06" />
         <item itemvalue="JUnit.Requestion.test04" />
-        <item itemvalue="JUnit.Requestion.test03" />
-        <item itemvalue="JUnit.JsonDemo01.mapToJson" />
       </list>
     </recent_temporary>
   </component>
@@ -325,7 +296,10 @@
       <workItem from="1447153718777" duration="2307000" />
       <workItem from="1447315980269" duration="7723000" />
       <workItem from="1447380097636" duration="2329000" />
-      <workItem from="1621594212499" duration="1041000" />
+      <workItem from="1621594212499" duration="2341000" />
+      <workItem from="1621923817108" duration="1198000" />
+      <workItem from="1622442991809" duration="53000" />
+      <workItem from="1622545422822" duration="3099000" />
     </task>
     <servers />
   </component>
@@ -337,120 +311,37 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2472" y="181" key="#Project_Structure/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1621595465220" />
-    <state width="1877" height="393" key="GridCell.Tab.0.bottom" timestamp="1621595512398">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1622548290190">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1621595512398" />
-    <state width="1877" height="393" key="GridCell.Tab.0.center" timestamp="1621595512398">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1622548290190" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1622548290190">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1621595512398" />
-    <state width="1877" height="393" key="GridCell.Tab.0.left" timestamp="1621595512398">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1622548290190" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1622548290190">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1621595512398" />
-    <state width="1877" height="393" key="GridCell.Tab.0.right" timestamp="1621595512398">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1622548290190" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1622548290190">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1621595512398" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1622548290190" />
+    <state x="2572" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1621925464572">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2572" y="347" key="com.intellij.ide.util.TipDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1621925464572" />
     <state x="2254" y="224" key="new project wizard" timestamp="1621595367001">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2254" y="224" key="new project wizard/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1621595367001" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1622545966179">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1622545966179" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>com.learn:war</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Web</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>lib</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>excise-api</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: com.alibaba:fastjson:1.2.3</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
