@@ -1,33 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="751d98fe-22f4-4d12-879c-403deb5955a1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/excise-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/excise-api/src/main/java/offen/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/excise-api/src/main/java/thread/LockSupportDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/excise-api/src/main/java/thread/ReentrantLockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/excise-api/src/main/java/thread/VolatileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com.learn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/com.learn.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/excise-api/excise-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/excise-api/excise-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/excise-api/target/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/excise-api/target/classes/utils/DateUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/excise-api/target/classes/utils/DateUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excise-service/excise-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/excise-service/excise-service.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/file/git.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/file/~$git.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/excise/JsonDemo/Requestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/excise/JsonDemo/ServletDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/excise/JsonDemo/requestion/JsonDemo01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/excise/JsonDemo/requestion/test/Base.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/excise/JsonDemo/requestion/test/Sub.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/excise/JsonDemo/JsonDemo01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/excise/JsonDemo/Requestion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/excise/JsonDemo/ServletDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/excise/JsonDemo/requestion/JsonDemo01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/excise/JsonDemo/requestion/test/Base.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/excise/JsonDemo/requestion/test/Sub.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +44,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -62,41 +53,59 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_202/src.zip!/java/lang/ClassLoader.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_202/src.zip!/java/net/URLClassLoader.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_202/javafx-src.zip!/com/sun/javafx/application/LauncherImpl.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_202/jre/lib/rt.jar!/sun/misc/Launcher.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_202/src.zip!/java/lang/String.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_202/src.zip!/java/util/concurrent/locks/ReentrantLock.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_202/src.zip!/java/lang/System.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.2.7.RELEASE/spring-beans-5.2.7.RELEASE-sources.jar!/org/springframework/beans/factory/BeanFactory.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_202/src.zip!/java/security/SecureClassLoader.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../tool/apache-maven-3.5.4" />
+        <option name="localRepository" value="C:\mgq\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../program/apache-maven-3.5.0" />
+        <option name="userSettingsFile" value="C:\mgq\program\apache-maven-3.5.0\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-  </component>
   <component name="ProjectId" id="1sqJVcBBXyUm17RL1iYvVt0QROg" />
   <component name="ProjectViewState">
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
-  <component name="RunManager" selected="JUnit.Requestion.test07">
+  <component name="ReaderModeSettings">
+    <option name="enabled" value="false" />
+  </component>
+  <component name="RunManager" selected="Application.LockSupportDemo">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -145,12 +154,6 @@
       <module />
       <method />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
       <setting name="vmparams" value="" />
       <setting name="cmdLine" value="run-app" />
@@ -162,70 +165,73 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="JsonDemo01.mapToJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.learn" />
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <method v="2" />
+    </configuration>
+    <configuration name="LockSupportDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.LockSupportDemo" />
+      <module name="excise-api" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.excise.JsonDemo.*" />
+          <option name="PATTERN" value="thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.excise.JsonDemo.requestion" />
-      <option name="MAIN_CLASS_NAME" value="com.excise.JsonDemo.requestion.JsonDemo01" />
-      <option name="METHOD_NAME" value="mapToJson" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Requestion.test03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.learn" />
+    <configuration name="ReentrantLockTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.ReentrantLockTest" />
+      <module name="excise-api" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.excise.JsonDemo.*" />
+          <option name="PATTERN" value="thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.excise.JsonDemo" />
-      <option name="MAIN_CLASS_NAME" value="com.excise.JsonDemo.Requestion" />
-      <option name="METHOD_NAME" value="test03" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Requestion.test04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.learn" />
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="offen.Test1" />
+      <module name="excise-api" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.excise.JsonDemo.*" />
+          <option name="PATTERN" value="offen.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.excise.JsonDemo" />
-      <option name="MAIN_CLASS_NAME" value="com.excise.JsonDemo.Requestion" />
-      <option name="METHOD_NAME" value="test04" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Requestion.test06" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.learn" />
+    <configuration name="VolatileTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.VolatileTest" />
+      <module name="excise-api" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.excise.JsonDemo.*" />
+          <option name="PATTERN" value="thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.excise.JsonDemo" />
-      <option name="MAIN_CLASS_NAME" value="com.excise.JsonDemo.Requestion" />
-      <option name="METHOD_NAME" value="test06" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -272,29 +278,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <pass-parent-envs>true</pass-parent-envs>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="JUnit.JsonDemo01.mapToJson" />
-      <item itemvalue="JUnit.Requestion.test03" />
-      <item itemvalue="JUnit.Requestion.test04" />
-      <item itemvalue="JUnit.Requestion.test06" />
+      <item itemvalue="Application.VolatileTest" />
+      <item itemvalue="Application.Test1" />
+      <item itemvalue="Application.ReentrantLockTest" />
+      <item itemvalue="Application.LockSupportDemo" />
       <item itemvalue="JUnit.Requestion.test07" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LockSupportDemo" />
+        <item itemvalue="Application.ReentrantLockTest" />
+        <item itemvalue="Application.Test1" />
+        <item itemvalue="Application.VolatileTest" />
         <item itemvalue="JUnit.Requestion.test07" />
-        <item itemvalue="JUnit.Requestion.test06" />
-        <item itemvalue="JUnit.Requestion.test04" />
-        <item itemvalue="JUnit.Requestion.test03" />
-        <item itemvalue="JUnit.JsonDemo01.mapToJson" />
       </list>
     </recent_temporary>
   </component>
@@ -310,6 +307,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -326,131 +324,61 @@
       <workItem from="1447315980269" duration="7723000" />
       <workItem from="1447380097636" duration="2329000" />
       <workItem from="1621594212499" duration="1041000" />
+      <workItem from="1622472994267" duration="1755000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="2472" y="181" key="#Project_Structure" timestamp="1621595465220">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="552" y="178" key="#Project_Structure" timestamp="1622473269493">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="2472" y="181" key="#Project_Structure/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1621595465220" />
-    <state width="1877" height="393" key="GridCell.Tab.0.bottom" timestamp="1621595512398">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1622473269493" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1622473627847">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1621595512398" />
-    <state width="1877" height="393" key="GridCell.Tab.0.center" timestamp="1621595512398">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1622473627847" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1622473627847">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1621595512398" />
-    <state width="1877" height="393" key="GridCell.Tab.0.left" timestamp="1621595512398">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1622473627847" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1622473627846">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1621595512398" />
-    <state width="1877" height="393" key="GridCell.Tab.0.right" timestamp="1621595512398">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1622473627846" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1622473627847">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1621595512398" />
-    <state x="2254" y="224" key="new project wizard" timestamp="1621595367001">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1622473627847" />
+    <state x="461" y="161" key="SettingsEditor" timestamp="1622473302408">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="2254" y="224" key="new project wizard/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1621595367001" />
+    <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1622473302408" />
+    <state x="640" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1622472994480">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1622472994480" />
+    <state x="1122" y="290" key="run.anything.popup" timestamp="1622474231017">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1122" y="290" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1622474231017" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>com.learn:war</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Web</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>lib</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>excise-api</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: com.alibaba:fastjson:1.2.3</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
