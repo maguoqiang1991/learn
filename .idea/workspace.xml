@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="751d98fe-22f4-4d12-879c-403deb5955a1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/excise-service/src/main/java/thread/FIFOMutex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/excise-service/src/main/java/thread/ReentrantLockTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="751d98fe-22f4-4d12-879c-403deb5955a1" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -253,11 +248,11 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.ReentrantLockTest" />
+      <item itemvalue="Application.FIFOMutex$Main" />
       <item itemvalue="JUnit.Requestion.test04" />
       <item itemvalue="JUnit.Requestion.test06" />
       <item itemvalue="JUnit.Requestion.test07" />
-      <item itemvalue="Application.ReentrantLockTest" />
-      <item itemvalue="Application.FIFOMutex$Main" />
     </list>
     <recent_temporary>
       <list>
@@ -299,7 +294,7 @@
       <workItem from="1621594212499" duration="2341000" />
       <workItem from="1621923817108" duration="1198000" />
       <workItem from="1622442991809" duration="53000" />
-      <workItem from="1622545422822" duration="3099000" />
+      <workItem from="1622545422822" duration="3751000" />
     </task>
     <servers />
   </component>
