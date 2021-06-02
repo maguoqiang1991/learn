@@ -11,9 +11,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="com.learn" target="1.7" />
-      <module name="excise-api" target="1.7" />
-      <module name="excise-service" target="1.7" />
+      <module name="com.learn" target="8" />
+      <module name="excise-api" target="8" />
+      <module name="excise-service" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
