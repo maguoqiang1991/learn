@@ -71,4 +71,9 @@ public class AtomicTest {
     }
     //要用cas修改某个属性的值，首先要知道属性在对象在内存空间的哪个位置，必须知道属性的偏移量
     //偏移量：某个属性相对于其对象的内存地址的位置。例：UnSafeTest的地址是：thread.AtomicTest$UnsafeTest@1376c05c，age的偏移量是10。
+
+    @Test
+    public void testAba(){
+
+    }
 }
