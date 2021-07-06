@@ -1,10 +1,9 @@
 package thread.pool;
 
+import org.junit.Before;
 import org.junit.Test;
 
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 /**
  * @author maguoqiang
@@ -24,11 +23,24 @@ public class ExecutorTest {
     private int queueBlockSize = 10;
     private ThreadPoolExecutor executor;
 
-    @Test
+    @Before
     public void test01() {
+        /* 重试添加当前加入失败的任务 */
+        /* 时间单位,秒 */
         this.executor = new ThreadPoolExecutor(minPoolSize, maxPoolSize, idleSeconds,
-                TimeUnit.SECONDS, /* 时间单位,秒 */
+                TimeUnit.SECONDS,
                 new ArrayBlockingQueue<Runnable>(queueBlockSize),
-                new ThreadPoolExecutor.CallerRunsPolicy()); /* 重试添加当前加入失败的任务 */
+                new ThreadPoolExecutor.CallerRunsPolicy());
+    }
+
+    @Test
+    public void test02() throws InterruptedException, ExecutionException {
+        System.out.println("执行前activeCount:" + executor.getActiveCount());
+
+        FutureTask<String> stringFutureTask = new FutureTask<>(() -> "123");
+        executor.execute(stringFutureTask);
+        //Thread.sleep(1000L);
+        //System.out.println(stringFutureTask.get());
+        System.out.println("执行后activeCount:" + executor.getActiveCount());
     }
 }

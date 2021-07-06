@@ -8,6 +8,14 @@
   <properties>
     <netty.version>4.1.25.Final</netty.version>
     <os.detected.classifier>linux-x86_64</os.detected.classifier>
+
+    <java_source_version>1.8</java_source_version>
+    <java_target_version>1.8</java_target_version>
+    <file_encoding>UTF-8</file_encoding>
+    <maven_source_plugin_version>2.1.1</maven_source_plugin_version>
+    <maven_jar_plugin_version>2.3.2</maven_jar_plugin_version>
+    <maven_war_plugin_version>2.1.1</maven_war_plugin_version>
+    <maven_compiler_plugin_version>3.6.0</maven_compiler_plugin_version>
   </properties>
 
   <modules>
@@ -62,5 +70,17 @@
   </dependencies>
   <build>
     <finalName>com.learn</finalName>
+
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${maven_compiler_plugin_version}</version>
+        <configuration>
+          <source>${java_source_version}</source>
+          <target>${java_target_version}</target>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 </project>
