@@ -22,6 +22,6 @@ public class ArrayBlockingQueueTest {
 
     @Test
     public void test1(){
-        ServiceLoader.load()
+        //ServiceLoader.load()
     }
 }
