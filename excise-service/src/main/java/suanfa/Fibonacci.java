@@ -27,8 +27,13 @@ public class Fibonacci {
 
     public static void main(String[] args) {
         long start =System.currentTimeMillis();
-        for (int i = 1; i < 11; i++) {
+        /*for (int i = 1; i < 11; i++) {
             int fab = fab(i);
+            System.out.println(i+":"+fab+",耗时："+(System.currentTimeMillis() - start));
+        }*/
+
+        for (int i = 1; i < 11; i++) {
+            int fab = tailFab(i,1,1);
             System.out.println(i+":"+fab+",耗时："+(System.currentTimeMillis() - start));
         }
     }
