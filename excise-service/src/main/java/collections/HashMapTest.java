@@ -13,7 +13,7 @@ public class HashMapTest {
     }
     @Test
     public void test2() {
-        Map<NoChangeKey, String> map = new HashMap<NoChangeKey, String>(128);
+        HashMap<NoChangeKey, String> map = new HashMap<NoChangeKey, String>(128);
         map.put(new NoChangeKey(), "1");
         map.put(new NoChangeKey(), "2");
         map.put(new NoChangeKey(), "2");

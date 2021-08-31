@@ -3,10 +3,10 @@ import com.alibaba.fastjson.JSON;
 
 public class Special{
     public static void main(String[] args) {
-        String s="鎮ㄥソ锛屾牳瀹炰笂浼犵殑闈㈠崟鍥剧墖闈炴湰鍗曞揩閫掗潰鍗曞浘鐗囷紝聽鎻愪緵鐨勭収鐗囪瘉鎹笉瓒筹紝鎸夐��鎹㈣揣瑕佹眰鏃犳硶鍙楃悊锛屼綘鍙互涓婁紶绗﹀悎瑕佹眰鐨勭収鐗嚶犳垨鑰呰仈绯绘偍瀵瑰簲鐨凚D鏍告煡鏄惁鍙互绾夸笅澶勭悊聽锛岃阿璋紒";
+        String s="您好，核实上传的面单图片非本单快递面单图片，?提供的照片证据不足，按退换货要求无法受理，你可以上传符合要求的照片?或者联系您对应的BD核查是否可以线下处理?，谢谢！";
         s = JSON.toJSONString(s);
         System.out.println("===============");
-
+        String s1=" 汤臣倍健 胶原蛋白粉（水蜜桃味）";
         System.out.println(s);
     }
 }

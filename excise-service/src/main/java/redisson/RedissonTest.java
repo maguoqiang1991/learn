@@ -14,6 +14,11 @@ public class RedissonTest {
         RLock key = redisson.getLock("key");
         //底层使用了Lua脚本（原子性），可重入，获得锁后，返回，未获得，阻塞。如果重入后，会对设置 的值+1
         key.lock();
+        //业务代码
+        //------
+        //------
+        //------
+        //------
         key.unlock();
     }
 }
