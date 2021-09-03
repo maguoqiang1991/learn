@@ -9,7 +9,6 @@ import java.net.Socket;
  * @date 2021-06-03 14:25
  */
 public class SocketServer {
-
     public static void main(String[] args) throws IOException {
         ServerSocket serverSocket = new ServerSocket(9000);
         while (true) {
@@ -17,9 +16,8 @@ public class SocketServer {
             //阻塞方法
             Socket clientSocket = serverSocket.accept();
             System.out.println("有客户端连接了。。");
-            handler(clientSocket);
-
-            /*new Thread(new Runnable() {
+            //handler(clientSocket);
+            new Thread(new Runnable() {
                 @Override
                 public void run() {
                     try {
@@ -28,10 +26,9 @@ public class SocketServer {
                         e.printStackTrace();
                     }
                 }
-            }).start();*/
+            }).start();
         }
     }
-
     private static void handler(Socket clientSocket) throws IOException {
         byte[] bytes = new byte[1024];
         System.out.println("准备read。。");
