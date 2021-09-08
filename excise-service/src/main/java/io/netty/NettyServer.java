@@ -10,50 +10,50 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 public class NettyServer {
-
     public static void main(String[] args) throws Exception {
-        //´´½¨Á½¸öÏß³Ì×ébossGroupºÍworkerGroup, º¬ÓĞµÄ×ÓÏß³ÌNioEventLoopµÄ¸öÊıÄ¬ÈÏÎªcpuºËÊıµÄÁ½±¶
-        // bossGroupÖ»ÊÇ´¦ÀíÁ¬½ÓÇëÇó ,ÕæÕıµÄºÍ¿Í»§¶ËÒµÎñ´¦Àí£¬»á½»¸øworkerGroupÍê³É
+        //åˆ›å»ºä¸¤ä¸ªçº¿ç¨‹ç»„bossGroupå’ŒworkerGroup, å«æœ‰çš„å­çº¿ç¨‹NioEventLoopçš„ä¸ªæ•°é»˜è®¤ä¸ºcpuæ ¸æ•°çš„ä¸¤å€
+        // bossGroupåªæ˜¯å¤„ç†è¿æ¥è¯·æ±‚ ,çœŸæ­£çš„å’Œå®¢æˆ·ç«¯ä¸šåŠ¡å¤„ç†ï¼Œä¼šäº¤ç»™workerGroupå®Œæˆ
         EventLoopGroup bossGroup = new NioEventLoopGroup(10);
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         try {
-            //´´½¨·şÎñÆ÷¶ËµÄÆô¶¯¶ÔÏó
+            //åˆ›å»ºæœåŠ¡å™¨ç«¯çš„å¯åŠ¨å¯¹è±¡
             ServerBootstrap bootstrap = new ServerBootstrap();
-            //Ê¹ÓÃÁ´Ê½±à³ÌÀ´ÅäÖÃ²ÎÊı
-            bootstrap.group(bossGroup, workerGroup) //ÉèÖÃÁ½¸öÏß³Ì×é
-                    .channel(NioServerSocketChannel.class) //Ê¹ÓÃNioServerSocketChannel×÷Îª·şÎñÆ÷µÄÍ¨µÀÊµÏÖ
-                    // ³õÊ¼»¯·şÎñÆ÷Á¬½Ó¶ÓÁĞ´óĞ¡£¬·şÎñ¶Ë´¦Àí¿Í»§¶ËÁ¬½ÓÇëÇóÊÇË³Ğò´¦ÀíµÄ,ËùÒÔÍ¬Ò»Ê±¼äÖ»ÄÜ´¦ÀíÒ»¸ö¿Í»§¶ËÁ¬½Ó¡£
-                    // ¶à¸ö¿Í»§¶ËÍ¬Ê±À´µÄÊ±ºò,·şÎñ¶Ë½«²»ÄÜ´¦ÀíµÄ¿Í»§¶ËÁ¬½ÓÇëÇó·ÅÔÚ¶ÓÁĞÖĞµÈ´ı´¦Àí
+            //ä½¿ç”¨é“¾å¼ç¼–ç¨‹æ¥é…ç½®å‚æ•°
+            bootstrap.group(bossGroup, workerGroup) //è®¾ç½®ä¸¤ä¸ªçº¿ç¨‹ç»„
+                    .channel(NioServerSocketChannel.class) //ä½¿ç”¨NioServerSocketChannelä½œä¸ºæœåŠ¡å™¨çš„é€šé“å®ç°
+                    // åˆå§‹åŒ–æœåŠ¡å™¨è¿æ¥é˜Ÿåˆ—å¤§å°ï¼ŒæœåŠ¡ç«¯å¤„ç†å®¢æˆ·ç«¯è¿æ¥è¯·æ±‚æ˜¯é¡ºåºå¤„ç†çš„,æ‰€ä»¥åŒä¸€æ—¶é—´åªèƒ½å¤„ç†ä¸€ä¸ªå®¢æˆ·ç«¯è¿æ¥ã€‚
+                    // å¤šä¸ªå®¢æˆ·ç«¯åŒæ—¶æ¥çš„æ—¶å€™,æœåŠ¡ç«¯å°†ä¸èƒ½å¤„ç†çš„å®¢æˆ·ç«¯è¿æ¥è¯·æ±‚æ”¾åœ¨é˜Ÿåˆ—ä¸­ç­‰å¾…å¤„ç†
                     .option(ChannelOption.SO_BACKLOG, 1024)
-                    .childHandler(new ChannelInitializer<SocketChannel>() {//´´½¨Í¨µÀ³õÊ¼»¯¶ÔÏó£¬ÉèÖÃ³õÊ¼»¯²ÎÊı
+                    .childHandler(new ChannelInitializer<SocketChannel>() {//åˆ›å»ºé€šé“åˆå§‹åŒ–å¯¹è±¡ï¼Œè®¾ç½®åˆå§‹åŒ–å‚æ•°
 
                         @Override
                         protected void initChannel(SocketChannel ch) throws Exception {
-                            //¶ÔworkerGroupµÄSocketChannelÉèÖÃ´¦ÀíÆ÷
+                            //å¯¹workerGroupçš„SocketChannelè®¾ç½®å¤„ç†å™¨
                             ch.pipeline().addLast(new NettyServerHandler());
                         }
                     });
-            System.out.println("netty server start¡£¡£");
-            //°ó¶¨Ò»¸ö¶Ë¿Ú²¢ÇÒÍ¬²½, Éú³ÉÁËÒ»¸öChannelFutureÒì²½¶ÔÏó£¬Í¨¹ıisDone()µÈ·½·¨¿ÉÒÔÅĞ¶ÏÒì²½ÊÂ¼şµÄÖ´ĞĞÇé¿ö
-            //Æô¶¯·şÎñÆ÷(²¢°ó¶¨¶Ë¿Ú)£¬bindÊÇÒì²½²Ù×÷£¬sync·½·¨ÊÇµÈ´ıÒì²½²Ù×÷Ö´ĞĞÍê±Ï
+            System.out.println("netty server startã€‚ã€‚");
+            //ç»‘å®šä¸€ä¸ªç«¯å£å¹¶ä¸”åŒæ­¥, ç”Ÿæˆäº†ä¸€ä¸ªChannelFutureå¼‚æ­¥å¯¹è±¡ï¼Œé€šè¿‡isDone()ç­‰æ–¹æ³•å¯ä»¥åˆ¤æ–­å¼‚æ­¥äº‹ä»¶çš„æ‰§è¡Œæƒ…å†µ
+            //å¯åŠ¨æœåŠ¡å™¨(å¹¶ç»‘å®šç«¯å£)ï¼Œbindæ˜¯å¼‚æ­¥æ“ä½œï¼Œsyncæ–¹æ³•æ˜¯ç­‰å¾…å¼‚æ­¥æ“ä½œæ‰§è¡Œå®Œæ¯•
             ChannelFuture cf = bootstrap.bind(9000).sync();
-            //¸øcf×¢²á¼àÌıÆ÷£¬¼àÌıÎÒÃÇ¹ØĞÄµÄÊÂ¼ş
+            //ç»™cfæ³¨å†Œç›‘å¬å™¨ï¼Œç›‘å¬æˆ‘ä»¬å…³å¿ƒçš„äº‹ä»¶
             /*cf.addListener(new ChannelFutureListener() {
                 @Override
                 public void operationComplete(ChannelFuture future) throws Exception {
                     if (cf.isSuccess()) {
-                        System.out.println("¼àÌı¶Ë¿Ú9000³É¹¦");
+                        System.out.println("ç›‘å¬ç«¯å£9000æˆåŠŸ");
                     } else {
-                        System.out.println("¼àÌı¶Ë¿Ú9000Ê§°Ü");
+                        System.out.println("ç›‘å¬ç«¯å£9000å¤±è´¥");
                     }
                 }
             });*/
-            //¶ÔÍ¨µÀ¹Ø±Õ½øĞĞ¼àÌı£¬closeFutureÊÇÒì²½²Ù×÷£¬¼àÌıÍ¨µÀ¹Ø±Õ
-            // Í¨¹ısync·½·¨Í¬²½µÈ´ıÍ¨µÀ¹Ø±Õ´¦ÀíÍê±Ï£¬ÕâÀï»á×èÈûµÈ´ıÍ¨µÀ¹Ø±ÕÍê³É
+            //å¯¹é€šé“å…³é—­è¿›è¡Œç›‘å¬ï¼ŒcloseFutureæ˜¯å¼‚æ­¥æ“ä½œï¼Œç›‘å¬é€šé“å…³é—­
+            // é€šè¿‡syncæ–¹æ³•åŒæ­¥ç­‰å¾…é€šé“å…³é—­å¤„ç†å®Œæ¯•ï¼Œè¿™é‡Œä¼šé˜»å¡ç­‰å¾…é€šé“å…³é—­å®Œæˆ
             cf.channel().closeFuture().sync();
         } finally {
             bossGroup.shutdownGracefully();
             workerGroup.shutdownGracefully();
         }
     }
+
 }

@@ -7,29 +7,29 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.CharsetUtil;
 
 /**
- * ×Ô¶¨ÒåHandlerĞèÒª¼Ì³Ğnetty¹æ¶¨ºÃµÄÄ³¸öHandlerAdapter(¹æ·¶)
+ * è‡ªå®šä¹‰Handleréœ€è¦ç»§æ‰¿nettyè§„å®šå¥½çš„æŸä¸ªHandlerAdapter(è§„èŒƒ)
  */
 public class NettyServerHandler extends ChannelInboundHandlerAdapter {
 
     /**
-     * ¶ÁÈ¡¿Í»§¶Ë·¢ËÍµÄÊı¾İ
+     * è¯»å–å®¢æˆ·ç«¯å‘é€çš„æ•°æ®
      *
-     * @param ctx ÉÏÏÂÎÄ¶ÔÏó, º¬ÓĞÍ¨µÀchannel£¬¹ÜµÀpipeline
-     * @param msg ¾ÍÊÇ¿Í»§¶Ë·¢ËÍµÄÊı¾İ
+     * @param ctx ä¸Šä¸‹æ–‡å¯¹è±¡, å«æœ‰é€šé“channelï¼Œç®¡é“pipeline
+     * @param msg å°±æ˜¯å®¢æˆ·ç«¯å‘é€çš„æ•°æ®
      * @throws Exception
      */
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        System.out.println("·şÎñÆ÷¶ÁÈ¡Ïß³Ì " + Thread.currentThread().getName());
+        System.out.println("æœåŠ¡å™¨è¯»å–çº¿ç¨‹ " + Thread.currentThread().getName());
         //Channel channel = ctx.channel();
-        //ChannelPipeline pipeline = ctx.pipeline(); //±¾ÖÊÊÇÒ»¸öË«ÏòÁ´½Ó, ³öÕ¾ÈëÕ¾
-        //½« msg ×ª³ÉÒ»¸ö ByteBuf£¬ÀàËÆNIO µÄ ByteBuffer
+        //ChannelPipeline pipeline = ctx.pipeline(); //æœ¬è´¨æ˜¯ä¸€ä¸ªåŒå‘é“¾æ¥, å‡ºç«™å…¥ç«™
+        //å°† msg è½¬æˆä¸€ä¸ª ByteBufï¼Œç±»ä¼¼NIO çš„ ByteBuffer
         ByteBuf buf = (ByteBuf) msg;
-        System.out.println("¿Í»§¶Ë·¢ËÍÏûÏ¢ÊÇ:" + buf.toString(CharsetUtil.UTF_8));
+        System.out.println("å®¢æˆ·ç«¯å‘é€æ¶ˆæ¯æ˜¯:" + buf.toString(CharsetUtil.UTF_8));
     }
 
     /**
-     * Êı¾İ¶ÁÈ¡Íê±Ï´¦Àí·½·¨
+     * æ•°æ®è¯»å–å®Œæ¯•å¤„ç†æ–¹æ³•
      *
      * @param ctx
      * @throws Exception
@@ -41,7 +41,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
     }
 
     /**
-     * ´¦ÀíÒì³£, Ò»°ãÊÇĞèÒª¹Ø±ÕÍ¨µÀ
+     * å¤„ç†å¼‚å¸¸, ä¸€èˆ¬æ˜¯éœ€è¦å…³é—­é€šé“
      *
      * @param ctx
      * @param cause

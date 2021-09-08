@@ -9,7 +9,7 @@ import io.netty.util.CharsetUtil;
 public class NettyClientHandler extends ChannelInboundHandlerAdapter {
 
     /**
-     * µ±¿Í»§¶ËÁ¬½Ó·şÎñÆ÷Íê³É¾Í»á´¥·¢¸Ã·½·¨
+     * å½“å®¢æˆ·ç«¯è¿æ¥æœåŠ¡å™¨å®Œæˆå°±ä¼šè§¦å‘è¯¥æ–¹æ³•
      *
      * @param ctx
      * @throws Exception
@@ -20,12 +20,12 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter {
         ctx.writeAndFlush(buf);
     }
 
-    //µ±Í¨µÀÓĞ¶ÁÈ¡ÊÂ¼şÊ±»á´¥·¢£¬¼´·şÎñ¶Ë·¢ËÍÊı¾İ¸ø¿Í»§¶Ë
+    //å½“é€šé“æœ‰è¯»å–äº‹ä»¶æ—¶ä¼šè§¦å‘ï¼Œå³æœåŠ¡ç«¯å‘é€æ•°æ®ç»™å®¢æˆ·ç«¯
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         ByteBuf buf = (ByteBuf) msg;
-        System.out.println("ÊÕµ½·şÎñ¶ËµÄÏûÏ¢:" + buf.toString(CharsetUtil.UTF_8));
-        System.out.println("·şÎñ¶ËµÄµØÖ·£º " + ctx.channel().remoteAddress());
+        System.out.println("æ”¶åˆ°æœåŠ¡ç«¯çš„æ¶ˆæ¯:" + buf.toString(CharsetUtil.UTF_8));
+        System.out.println("æœåŠ¡ç«¯çš„åœ°å€ï¼š " + ctx.channel().remoteAddress());
     }
 
     @Override

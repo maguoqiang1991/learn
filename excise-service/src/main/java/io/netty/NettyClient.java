@@ -10,27 +10,27 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 
 public class NettyClient {
     public static void main(String[] args) throws Exception {
-        //¿Í»§¶ËĞèÒªÒ»¸öÊÂ¼şÑ­»·×é
+        //å®¢æˆ·ç«¯éœ€è¦ä¸€ä¸ªäº‹ä»¶å¾ªç¯ç»„
         EventLoopGroup group = new NioEventLoopGroup();
         try {
-            //´´½¨¿Í»§¶ËÆô¶¯¶ÔÏó
-            //×¢Òâ¿Í»§¶ËÊ¹ÓÃµÄ²»ÊÇServerBootstrap¶øÊÇBootstrap
+            //åˆ›å»ºå®¢æˆ·ç«¯å¯åŠ¨å¯¹è±¡
+            //æ³¨æ„å®¢æˆ·ç«¯ä½¿ç”¨çš„ä¸æ˜¯ServerBootstrapè€Œæ˜¯Bootstrap
             Bootstrap bootstrap = new Bootstrap();
-            //ÉèÖÃÏà¹Ø²ÎÊı
-            bootstrap.group(group) //ÉèÖÃÏß³Ì×é
-                    .channel(NioSocketChannel.class) // Ê¹ÓÃNioSocketChannel×÷Îª¿Í»§¶ËµÄÍ¨µÀÊµÏÖ
+            //è®¾ç½®ç›¸å…³å‚æ•°
+            bootstrap.group(group) //è®¾ç½®çº¿ç¨‹ç»„
+                    .channel(NioSocketChannel.class) // ä½¿ç”¨NioSocketChannelä½œä¸ºå®¢æˆ·ç«¯çš„é€šé“å®ç°
                     .handler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         protected void initChannel(SocketChannel ch) throws Exception {
-                            //¼ÓÈë´¦ÀíÆ÷
+                            //åŠ å…¥å¤„ç†å™¨
                             ch.pipeline().addLast(new NettyClientHandler());
                         }
                     });
 
-            System.out.println("netty client start¡£¡£");
-            //Æô¶¯¿Í»§¶ËÈ¥Á¬½Ó·şÎñÆ÷¶Ë
+            System.out.println("netty client startã€‚ã€‚");
+            //å¯åŠ¨å®¢æˆ·ç«¯å»è¿æ¥æœåŠ¡å™¨ç«¯
             ChannelFuture cf = bootstrap.connect("127.0.0.1", 9000).sync();
-            //¶ÔÍ¨µÀ¹Ø±Õ½øĞĞ¼àÌı
+            //å¯¹é€šé“å…³é—­è¿›è¡Œç›‘å¬
             cf.channel().closeFuture().sync();
         } finally {
             group.shutdownGracefully();

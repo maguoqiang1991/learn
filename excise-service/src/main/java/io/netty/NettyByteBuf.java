@@ -6,11 +6,11 @@ import io.netty.util.CharsetUtil;
 
 public class NettyByteBuf {
     public static void main(String[] args) {
-        // ´´½¨byteBuf¶ÔÏó£¬¸Ã¶ÔÏóÄÚ²¿°üº¬Ò»¸ö×Ö½ÚÊı×ébyte[10]
-        // Í¨¹ıreaderindexºÍwriterIndexºÍcapacity£¬½«buffer·Ö³ÉÈı¸öÇøÓò
-        // ÒÑ¾­¶ÁÈ¡µÄÇøÓò£º[0,readerindex)
-        // ¿É¶ÁÈ¡µÄÇøÓò£º[readerindex,writerIndex)
-        // ¿ÉĞ´µÄÇøÓò: [writerIndex,capacity)
+        // åˆ›å»ºbyteBufå¯¹è±¡ï¼Œè¯¥å¯¹è±¡å†…éƒ¨åŒ…å«ä¸€ä¸ªå­—èŠ‚æ•°ç»„byte[10]
+        // é€šè¿‡readerindexå’ŒwriterIndexå’Œcapacityï¼Œå°†bufferåˆ†æˆä¸‰ä¸ªåŒºåŸŸ
+        // å·²ç»è¯»å–çš„åŒºåŸŸï¼š[0,readerindex)
+        // å¯è¯»å–çš„åŒºåŸŸï¼š[readerindex,writerIndex)
+        // å¯å†™çš„åŒºåŸŸ: [writerIndex,capacity)
         ByteBuf byteBuf = Unpooled.buffer(10);
         System.out.println("byteBuf=" + byteBuf);
 
@@ -30,12 +30,12 @@ public class NettyByteBuf {
         System.out.println("byteBuf=" + byteBuf);
 
 
-        //ÓÃUnpooled¹¤¾ßÀà´´½¨ByteBuf
+        //ç”¨Unpooledå·¥å…·ç±»åˆ›å»ºByteBuf
         ByteBuf byteBuf2 = Unpooled.copiedBuffer("hello,zhuge!", CharsetUtil.UTF_8);
-        //Ê¹ÓÃÏà¹ØµÄ·½·¨
+        //ä½¿ç”¨ç›¸å…³çš„æ–¹æ³•
         if (byteBuf2.hasArray()) {
             byte[] content = byteBuf2.array();
-            //½« content ×ª³É×Ö·û´®
+            //å°† content è½¬æˆå­—ç¬¦ä¸²
             System.out.println(new String(content, CharsetUtil.UTF_8));
             System.out.println("byteBuf=" + byteBuf2);
 
@@ -43,17 +43,17 @@ public class NettyByteBuf {
             System.out.println(byteBuf2.writerIndex()); // 12
             System.out.println(byteBuf2.capacity()); // 36
 
-            System.out.println(byteBuf2.getByte(0)); // »ñÈ¡Êı×é0Õâ¸öÎ»ÖÃµÄ×Ö·ûhµÄasciiÂë£¬h=104
+            System.out.println(byteBuf2.getByte(0)); // è·å–æ•°ç»„0è¿™ä¸ªä½ç½®çš„å­—ç¬¦hçš„asciiç ï¼Œh=104
 
-            int len = byteBuf2.readableBytes(); //¿É¶ÁµÄ×Ö½ÚÊı  12
+            int len = byteBuf2.readableBytes(); //å¯è¯»çš„å­—èŠ‚æ•°  12
             System.out.println("len=" + len);
 
-            //Ê¹ÓÃforÈ¡³ö¸÷¸ö×Ö½Ú
+            //ä½¿ç”¨forå–å‡ºå„ä¸ªå­—èŠ‚
             for (int i = 0; i < len; i++) {
                 System.out.println((char) byteBuf2.getByte(i));
             }
 
-            //·¶Î§¶ÁÈ¡
+            //èŒƒå›´è¯»å–
             System.out.println(byteBuf2.getCharSequence(0, 6, CharsetUtil.UTF_8));
             System.out.println(byteBuf2.getCharSequence(6, 6, CharsetUtil.UTF_8));
         }
